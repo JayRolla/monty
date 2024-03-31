@@ -45,6 +45,7 @@ typedef struct global_s
 extern global_t global;
 
 /* Function prototypes */
+void stack_popper(stack_t **stack_head, unsigned int line_num);
 void stack_insert_node(stack_t **stack_head, unsigned int line_num, int value);
 void push_handler(stack_t **stack_head, unsigned int line_num);
 void print_stack(stack_t *stack_head, unsigned int line_num);
